@@ -2,11 +2,11 @@
 var currentDateAndTime = Date(Date.now());
 $("#currentDay").append(currentDateAndTime);
 
-    // Click function for save buttons  
-    $(".btn").click(function() { 
-        var hourNum = $(this).val();
-        localStorage.setItem("hour" + hourNum, $(".description").val());
-    })
+        // Click function for save buttons  
+        $(".btn").click(function() { 
+            var hourNum = $(this).val();
+            localStorage.setItem("hour" + hourNum, $(".description").val());
+        })
         
 function checkHours() {
     

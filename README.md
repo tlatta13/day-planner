@@ -1,4 +1,16 @@
-# day-planner
+# Daily Schedule Planner
+
+## Objective
+This project required us to create a daily schedule planner for employees to use to log out their daily schedule and store their list in local storage using javascript and jquery methods. 
+
+## Project Accomplishments
+* Created a UI with text inputs for every hour of the workday
+* Called on the stylesheet through the js file to change the color of input areas based on time of day
+
+
+## Site Link
+https://tlatta13.github.io/online-quiz/
+[Arsenal Quiz](https://tlatta13.github.io/online-quiz/)
 
 
 
