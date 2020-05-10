@@ -2,24 +2,25 @@
 var currentDateAndTime = Date(Date.now());
 $("#currentDay").append(currentDateAndTime);
 
-var currentHour = new Date().getHours();
-        console.log(currentHour);
-
-// Click function for save buttons  
-$(".btn").click(function() { 
-    var hourNum = $(this).val();
-    localStorage.setItem("time" + hourNum, $("#textInput" + hourNum).val());
-})
-
+    // Click function for save buttons  
+    $(".btn").click(function() { 
+        var hourNum = $(this).val();
+        localStorage.setItem("hour" + hourNum, $(".description").val());
+    })
+        
 function checkHours() {
+    
+    var currentHour = new Date().getHours();
+    console.log(currentHour);
+    
     // Loop through hours
     for (var i = 9; i < 18; i++) {
-        
+
+
         // get local storage
-        var noteInput = localStorage.getItem("time" + i);
+        var noteInput = localStorage.getItem("hour" + i);
         if(noteInput !== null) {
-            $(".description" + i).val(noteInput);
-            // console.log(noteInput)
+            $(".description").val(noteInput);
         }   
         
         // Change text area color
